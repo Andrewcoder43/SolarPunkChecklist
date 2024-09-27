@@ -1,0 +1,120 @@
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px; /* Base font size increased */
+}
+
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Optional: adds space below the title */
+}
+
+
+
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.div1, .div2, .div3 {
+  background-color: white; /* Changed to white background */
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 15px; /* Increased border radius for a softer look */
+  border: 2px solid #ccc; /* Default border color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  transition: background-color 0.3s, border-color 0.3s; /* Transition for background and border color */
+  font-size: 20px; /* Increased from 18px to 20px */
+  font-weight: 500;
+}
+
+.div1.checked, .div2.checked, .div3.checked {
+  background-color: #d4edda; /* Light green background when checked */
+  border-color: #4caf50; /* Green border when checked */
+}
+
+.checkbox {
+  margin-right: 15px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.checkbox:checked::after {
+  content: '✔';
+  color: white;
+  font-size: 16px;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.emoji {
+  margin-right: 15px; /* Increased spacing */
+  font-size: 2em; /* Larger emoji */
+}
+
+.text {
+  margin-right: 10px;
+  font-size: 20px; /* Explicitly set font size for text */
+}
+
+.completed {
+  background-color: #d4edda; /* Light green background */
+}
+
+.completion-status {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.completion-text {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  font-size: 22px; /* Increased from 18px to 22px */
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50; /* Green color */
+  transition: width 0.3s ease;
+}
