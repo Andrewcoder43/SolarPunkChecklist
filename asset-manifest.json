@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SolarPunkChecklist/static/css/main.638be0cf.css",
+    "main.js": "/SolarPunkChecklist/static/js/main.0f5a9bf6.js",
+    "static/js/453.a221f483.chunk.js": "/SolarPunkChecklist/static/js/453.a221f483.chunk.js",
+    "index.html": "/SolarPunkChecklist/index.html",
+    "main.638be0cf.css.map": "/SolarPunkChecklist/static/css/main.638be0cf.css.map",
+    "main.0f5a9bf6.js.map": "/SolarPunkChecklist/static/js/main.0f5a9bf6.js.map",
+    "453.a221f483.chunk.js.map": "/SolarPunkChecklist/static/js/453.a221f483.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.638be0cf.css",
+    "static/js/main.0f5a9bf6.js"
+  ]
+}
